@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+}
+.logo {
+    margin-left: 35px;
+    display: flex;
+}
+.logo h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: #ed388f;
+}
+.logo button{
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+}
+.logo button a{
+  color: black;
+  text-decoration-line: none;
+
+}
+.finish-button {
+    border-radius: 5px;
+    background-color: #ed388f !important;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    margin: 20px 0;
+    padding: 10px 50px;
+    color: white;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+.container {
+    text-align: center; 
+    margin-top: 50px;
+    
+}
+.container h1 {
+    font-family: "Poppins", sans-serif;
+}
+.intro{
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  position: absolute;
+}
+.intro p{
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.option:hover p{
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.option:hover img {
+      transform: translateY(-50%);
+}
+
+.option h2 {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      margin: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      transition: transform 0.3s;
+}
+.option:hover h2 {
+    transform: translateY(-100%);
+}
+.checkmark {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #ccc;
+
+}
+.hidden {
+    display: none;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 70px 0;
+    border-radius: 10px;
+}
+
+.option {
+    position: relative;
+    flex: 1;
+    max-width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.option.selected {
+  border-color: #ed388f;
+}
+.option img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+    width: 300px;
+    height: auto;
+     position: relative;
+      transition: transform 0.3s;
+}
+
+.option h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.selected .selector::before {
+  content: '\2713'; /* Unicode character for checkmark */
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: #fff; /* Color of the checkmark */
+  position: absolute; /* Position it relative to the .selector */
+  top: 50%; /* Position it vertically centered */
+  left: 50%; /* Position it horizontally centered */
+  transform: translate(-50%, -50%); /* Center it precisely */
+}
+.option:hover .checkmark {
+  background-color: #ed388f;
+}
+.option.selected .checkmark {
+  background-color: #ed388f;
+}
+.option .checkmark::after {
+    content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ed388f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.option.selected .checkmark::after {
+  opacity: 1;
+}
+.checkmark::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.checkmark.selected::after {
+  content: '\2713'; /* Unicode character for checkmark */
+  font-size: 0.8rem;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.option.selected .checkmark {
+  background-color: #ed388f;
+  border-color: #ed388f;
+}
+.return{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+.return a{
+    color: gray;
+}
+.else{
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.else, .return {
+  display: none; /* Hide the messages initially */
+}

@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+}
+.avatar-preview {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 10px;
+      border: 3px dashed #bbbbbb; /* Dotted gray border */
+      position: relative;
+    }
+    .avatar-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .camera-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: #666;
+      
+    }
+    #profile-form label{
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        margin:20px 0;
+    }
+    #location {
+      border: none;
+      padding: 5px 10px;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .btn-primary{
+    border-radius: 5px;
+    background-color: #ed388f !important;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    margin:10px 0;
+    padding: 10px 50px;;
+    }
+    .btn-primary a{
+      color: white;
+  text-decoration-line: none;
+    }
+
+    .custom-file-label{
+        font-weight: normal;
+        
+    }
+    .custom-file-input{
+      color: white;
+      display: none;
+    }
+    .side p{
+        color: gray;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    #profile-form p{
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+    }
+    .form-control-file{
+        color: white;
+        border-radius: 2px;
+        background-color: white;
+        font-weight: bold;
+    }
+    .logo {
+    margin-left: 35px;
+   }
+
+    .logo h2{
+        margin-top: 20px;
+        margin-bottom: 10px ;
+        font-family: "Sacramento", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: #ed388f;
+    }
+    .container{
+        margin-top: 30px;
+    }

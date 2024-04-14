@@ -1,0 +1,169 @@
+body {
+  overflow: hidden; 
+}
+
+.registration-img img {
+  height: auto; 
+  width: auto;
+  margin: 20px 0;
+}
+
+.registration-img {
+  background-color: #edcd83;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overflow-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #755d0c;
+}
+
+.signup-form {
+  margin: 80px 20px;
+}
+
+.signup-form h2 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-form label {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-form .form-control {
+  border-radius: 5px;
+  background-color: rgba(195, 195, 195, 0.255);
+  border: none;
+}
+
+.signup-form .btn-primary {
+  border-radius: 5px;
+  background-color: #ed388f;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+
+.signup-form .btn-primary a {
+  color: white;
+  text-decoration-line: none;
+}
+
+.logo {
+  margin-left: 35px;
+}
+
+.logo h2 {
+  margin-bottom: 10px;
+  font-family: "Sacramento", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.logo p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.footer {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.form-check-label {
+  color: gray;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.signup-form p {
+  color: gray;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.signup-form h2 {
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.form-group label {
+  margin-bottom: 10px; 
+}
+
+.existing-users {
+  text-align: right;
+  margin-top: 20px; 
+  margin-right: 20px; 
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .signup-form {
+    margin: 80px auto;
+    max-width: 500px;
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+  .signup-form {
+    margin: 40px 10px;
+  }
+
+  .signup-form h2 {
+    font-size: 20px;
+  }
+
+  .signup-form .btn-primary {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .logo h2 {
+    font-size: 20px;
+  }
+
+  .logo p {
+    font-size: 20px;
+  }
+
+  .footer {
+    margin-left: 10px;
+  }
+
+  .existing-users {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+      .registration-img {
+        display: none; /* Hide the registration image on small screens */
+      }
+    }
+    @media (min-width: 768px) {
+      .form-group.side-by-side .form-control {
+        display: inline-block;
+        width: calc(50% - 5px); /* Adjust the width to leave a small gap between the fields */
+        margin-right: 10px;
+      }
+      .form-group.side-by-side .form-control:last-child {
+        margin-right: 0; /* Remove margin-right from the last field */
+      }
+    }

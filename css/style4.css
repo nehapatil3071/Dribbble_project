@@ -1,0 +1,139 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.navbar .logo{
+  text-decoration-line: none;
+}
+.container2{
+  background-color: rgb(244, 244, 244);
+}
+li{
+  list-style-type: none;
+  margin: 15px 0;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+h6{
+  margin-top: 60px;
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+    margin-left: 17px;
+    margin-top:11px;
+    margin-bottom: 10px;
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 32px;
+   }
+.navbar-nav{
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.form-inline input{
+  width: 50px;
+}
+.case{
+  color: gray;
+  height: 15px;
+  width: 15px;
+  margin-right: 20px;
+}
+.navbar .user-profile{
+  border-radius: 50%;
+}
+.navbar .btn{
+  color: white;
+  background-color: #ed388f;
+  border: none;
+}
+.container{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px ;
+  margin-bottom: 90px;
+  font-family: "Poppins", sans-serif;
+}
+.container .email{
+  color: gray;
+}
+h3{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.fa-envelope-circle-check {
+    position: relative;
+    font-size: 50px;
+}
+
+.fa-envelope-circle-check:before {
+    content: "\f0e0"; /* Envelope icon */
+    
+}
+
+.fa-envelope-circle-check:after {
+    content: "\2713"; /* Checkmark symbol */
+    position: absolute;
+    top: 15%;
+    right: px;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: #ed388f;
+}
+
+.container p a{
+  color: #ed388f;
+  text-decoration-line: none;
+}
+p{
+  margin: 10px;
+}
+.container2{
+  display: flex;
+}
+.last{
+  display: flex;
+  font-size: 14px;
+  padding: 20px;
+  background-color: rgb(241, 241, 241);
+  border-top: 2px solid rgb(215, 215, 215);
+}
+.head{
+  margin-top: 60px;
+}
+h2{
+  font-family: "Sacramento", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: #ed388f;
+    font-size: 32px;
+    margin-left: 10px;
+}
+.head p{
+  font-size: 14px;
+}
+.container p{
+  margin-top: 20px;
+}
+.last i{
+  color: #ed388f;
+}
+.container2 .icon i{
+  margin-left: 10px;
+  cursor: pointer;
+}
