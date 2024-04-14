@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dribbble Options</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Sacramento&display=swap" rel="stylesheet"></head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head>
+<body>
+     <div class="logo">
+            <h2>dribbble</h2>
+            <button><a href="create_profile.html"><</a></button>
+    </div>
+  <div class="container">
+    <h1>What brings you to Dribbble?</h1>
+    <p class="text-center">
+        Select the options that best describe you. Don't worry, you can explore other options later.
+    </p>
+    <div class="options">
+      <div class="option" data-msg="Welcome to the designer community!">
+        <img src="img/4.png" alt="Designer Icon">
+        <div class="intro">
+        <h2>I'm a designer looking to share my work</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt beatae provident nulla.</p>
+        </div>
+       <span class="checkmark"></span>
+      </div>
+      
+      <div class="option" data-msg="Looking forward to seeing your project!">
+        <img src="img/2.png" alt="Hire Designer Icon">
+        <div class="intro">
+        <h2>I'm looking to hire a designer</h2>
+        <p>Lorem ipsum dolor sit adipisicing nis repellendus, obcaecati beatae provident.</p>
+        </div>
+       <span class="checkmark"></span>
+      </div>
+      <div class="option" data-msg="Get ready to be inspired!">
+        <img src="img/3.png" alt="Design Inspiration Icon">
+        <div class="intro">
+        <h2>I'm looking for design inspiration</h2>
+        <p>Lorem ipsum dolor sit amet, iste minima sint sapiente veritatis nam! Officia omnis repellendus, obcaecati beatae.</p>
+        </div>
+       <span class="checkmark"></span>
+      </div>
+    </div>
+    <p class="else">Anything else? You can Select multiple</p>
+    <button class="finish-button">Finish</button>
+    <p class="return">or Press <a href="create_profile.html">RETURN</a></p>
+  </div>
+  <script>
+    document.querySelector('.finish-button').addEventListener('click', function() {
+      window.location.href = 'home.html';
+     
+    });
+  </script>
+   <script src="js/script2.js"></script>
+</body>
+</html>

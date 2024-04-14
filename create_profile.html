@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Profile</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Sacramento&display=swap" rel="stylesheet"></head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head>
+<body>
+    <div class="logo">
+            <h2>dribbble</h2>
+    </div>
+   <div class="container">
+     <div class="row justify-content-center">
+      <div class="col-md-7">
+        <h1 class="mt-5">Welcome! Let's create your profile</h1>
+        <p>Let others get to know you better! You can do these later</p>
+        <form id="profile-form" class="mt-4" enctype="multipart/form-data">
+          <div class="form-row align-items-center">
+            <div class="form-group col-md-6">
+                <label for="avatar">Add an avatar</label>
+              <div class="avatar-preview">
+                <img id="avatar-preview" src="#" >
+                 <span class="camera-icon"><i class="fa fa-camera"></i></span>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="avatar" name="avatar" accept="image/*">
+                <label class="custom-file-label" for="avatar">Choose image</label>
+              </div>
+              
+              <div class="side">
+                <p>> Or choose one of our defaults</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="location">Add your location</label>
+            <input type="text" id="location" name="location" class="form-control" placeholder="Enter your location">
+          </div>
+          <button type="submit" class="btn btn-primary" id="next-btn" disabled><a href="categories.html">Next</a></button>
+          <div class="side" id="return-option" style="display: none;">
+              <p>or Press <a href="index.html">RETURN</a></p>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Preview uploaded image
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function(e) {
+          $('#avatar-preview').attr('src', e.target.result);
+        }
+        
+        reader.readAsDataURL(input.files[0]); 
+        $('#return-option').show();
+      }
+    }
+
+    $("#avatar").change(function() {
+      readURL(this);
+      $('#next-btn').prop('disabled', false);
+    });
+  </script>
+</body>
+</html>

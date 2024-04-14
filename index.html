@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    
+    @media (max-width: 767px) {
+      .registration-img {
+        display: none; 
+      }
+    }
+    @media (min-width: 768px) {
+      .form-group.side-by-side .form-control {
+        display: inline-block;
+        width: calc(50% - 5px); /* Adjust the width to leave a small gap between the fields */
+        margin-right: 10px;
+      }
+      .form-group.side-by-side .form-control:last-child {
+        margin-right: 0; /* Remove margin-right from the last field */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 justify-content-center align-items-center registration-img">
+        <div class="overflow-img">
+          <div class="logo">
+            <h2>dribbble</h2>
+            <p>Discover the world's top <br> Designers & Creatives.</p>
+          </div>
+          <img src="img/side-image.png" class="img-fluid" alt="Signup Image">
+          <div class="footer">
+            <p>Art by <a href="#">Peter Tarka</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-12">
+        <div class="existing-users">
+          <p>Already a member? <a href="sign_up.html">Sign in</a></p>
+        </div>
+        <div class="signup-form" >
+          <form id="signup-form" action="signup.php" method="POST">
+            <h2>Sign Up to Dribbble</h2>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
+            </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Valid email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" class="form-control" placeholder="6+ characters" required>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" id="terms" name="terms" class="form-check-input" required>
+              <label class="form-check-label" for="terms">Creating an account means you're okay with our <a href="#">Terms of Services, Privacy Policy</a>, and our default <a href="#">Notification Setting</a>.</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block"><a href="create_profile.html"> Create Account</a></button>
+            <p>This Site Is Protected By reCAPTCHA and the Google <br><a href="#">Privacy Policy</a> and <a href="#">Term of Services</a> apply</p>
+          </form>
+          <div id="message"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
